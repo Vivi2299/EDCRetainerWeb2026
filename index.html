@@ -1,0 +1,1061 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<title>EDC — Emerging Designer Collective · Retainer Studio · Bali · Singapore · Brisbane</title>
+<meta name="description" content="The EDC Retainer. Hire your own ethical fashion design and production team. Foundation, Studio and Maison tiers. Low MOQ from 30 units. Bali · Singapore · Brisbane — serving brands in Australia, Singapore, Dubai and the United Kingdom." />
+<meta name="theme-color" content="#1a1814" />
+<meta property="og:title" content="EDC — Hire Your Own Fashion Design & Production Team" />
+<meta property="og:description" content="One ethical studio. Three tiers of access. Low MOQ, sustainable sourcing, priority production slots." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --bone:#f3eee5;
+    --bone-2:#ebe4d6;
+    --cream:#f8f4ec;
+    --paper:#fbf8f1;
+    --ink:#1a1814;
+    --ink-2:#3a342c;
+    --mute:#7d7468;
+    --line:#cdc3b1;
+    --terra:#a8553a;
+    --terra-soft:#c97a5c;
+    --gold:#a98e5f;
+    --shadow:0 1px 0 rgba(26,24,20,.08);
+    --serif:"Cormorant Garamond", "Times New Roman", Georgia, serif;
+    --sans:"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    --rad:2px;
+    --maxw:1240px;
+    --pad:clamp(20px, 5vw, 80px);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    font-weight:300;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    letter-spacing:.005em;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  ::selection{background:var(--ink);color:var(--bone)}
+
+  /* ============ NAV ============ */
+  .nav{
+    position:sticky;top:0;z-index:80;
+    background:rgba(251,248,241,.86);
+    backdrop-filter:saturate(140%) blur(10px);
+    -webkit-backdrop-filter:saturate(140%) blur(10px);
+    border-bottom:1px solid rgba(26,24,20,.08);
+  }
+  .nav__inner{
+    max-width:var(--maxw);margin:0 auto;
+    padding:18px var(--pad);
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+  }
+  .brand{
+    font-family:var(--serif);
+    font-weight:500;font-size:22px;letter-spacing:.18em;
+    text-transform:uppercase;
+  }
+  .brand small{display:block;font-family:var(--sans);font-weight:300;
+    font-size:9.5px;letter-spacing:.34em;color:var(--mute);margin-top:2px}
+  .nav__links{display:flex;gap:30px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2)}
+  .nav__links a{position:relative;padding:6px 0}
+  .nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .35s ease}
+  .nav__links a:hover::after{transform:scaleX(1)}
+  .nav__cta{display:flex;align-items:center;gap:14px}
+  .ccy{
+    background:transparent;border:1px solid var(--line);
+    padding:8px 10px;font-family:var(--sans);font-size:11px;letter-spacing:.18em;
+    color:var(--ink-2);cursor:pointer;text-transform:uppercase;border-radius:1px;
+  }
+  .ccy:hover{border-color:var(--ink)}
+  .btn{
+    display:inline-block;padding:13px 22px;font-size:11px;
+    letter-spacing:.28em;text-transform:uppercase;
+    border:1px solid var(--ink);background:var(--ink);color:var(--bone);
+    cursor:pointer;transition:all .3s ease;border-radius:1px;
+  }
+  .btn:hover{background:transparent;color:var(--ink)}
+  .btn--ghost{background:transparent;color:var(--ink)}
+  .btn--ghost:hover{background:var(--ink);color:var(--bone)}
+  .menu-toggle{display:none;background:transparent;border:0;font-size:22px;color:var(--ink);cursor:pointer}
+
+  @media (max-width:880px){
+    .nav__links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--paper);padding:24px var(--pad);gap:18px;border-bottom:1px solid var(--line)}
+    .nav__links.open{display:flex}
+    .menu-toggle{display:inline-flex}
+    .nav__cta .btn{display:none}
+  }
+
+  /* ============ HERO ============ */
+  .hero{
+    padding:clamp(80px,12vw,160px) var(--pad) clamp(60px,8vw,120px);
+    max-width:var(--maxw);margin:0 auto;
+    display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center;
+  }
+  .hero__kicker{
+    font-size:11px;letter-spacing:.4em;text-transform:uppercase;color:var(--mute);
+    margin-bottom:22px;
+  }
+  .hero h1{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(46px,6.6vw,92px);
+    line-height:1.02;letter-spacing:-.012em;margin:0 0 28px;
+    color:var(--ink);
+  }
+  .hero h1 em{font-style:italic;color:var(--ink-2);font-weight:300}
+  .hero p.lede{
+    font-family:var(--serif);font-size:clamp(18px,1.6vw,22px);
+    font-weight:300;line-height:1.55;color:var(--ink-2);max-width:52ch;
+    margin:0 0 36px;font-style:italic;
+  }
+  .hero__actions{display:flex;gap:14px;flex-wrap:wrap}
+  .hero__meta{
+    display:flex;gap:36px;margin-top:48px;
+    font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute);
+  }
+  .hero__visual{
+    aspect-ratio:4/5;
+    background:
+      linear-gradient(140deg, rgba(26,24,20,.05), rgba(26,24,20,.18)),
+      radial-gradient(circle at 30% 20%, var(--bone-2), var(--bone) 60%, #ddd2bd);
+    border:1px solid var(--line);
+    position:relative;overflow:hidden;
+  }
+  .hero__visual svg{position:absolute;inset:0;width:100%;height:100%}
+  .hero__visual .tag{
+    position:absolute;bottom:24px;left:24px;right:24px;
+    font-family:var(--serif);font-style:italic;font-size:16px;color:var(--ink-2);
+    letter-spacing:.02em;
+  }
+  @media (max-width:880px){
+    .hero{grid-template-columns:1fr;gap:50px;padding-top:60px}
+    .hero__meta{gap:22px;flex-wrap:wrap}
+  }
+
+  /* ============ MARQUEE — LOCATIONS ============ */
+  .strip{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--cream);overflow:hidden;
+  }
+  .strip__track{
+    display:flex;gap:60px;padding:22px 0;
+    font-size:12px;letter-spacing:.4em;text-transform:uppercase;color:var(--ink-2);
+    white-space:nowrap;animation:marquee 38s linear infinite;
+  }
+  .strip__track span::after{content:"·";margin-left:60px;color:var(--gold)}
+  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+  /* ============ SECTION ============ */
+  section.section{padding:clamp(80px,10vw,140px) var(--pad)}
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  .eyebrow{
+    font-size:11px;letter-spacing:.4em;text-transform:uppercase;
+    color:var(--mute);margin-bottom:18px;
+    display:inline-flex;align-items:center;gap:14px;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+  h2.section__title{
+    font-family:var(--serif);font-weight:400;
+    font-size:clamp(36px,4.8vw,64px);
+    line-height:1.05;letter-spacing:-.01em;margin:0 0 28px;
+  }
+  h2.section__title em{font-style:italic;color:var(--ink-2);font-weight:300}
+  .lead{font-family:var(--serif);font-size:clamp(18px,1.5vw,22px);font-weight:300;
+    color:var(--ink-2);max-width:62ch;line-height:1.55}
+
+  /* ============ MANIFESTO ============ */
+  .manifesto{background:var(--bone);position:relative}
+  .manifesto::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line)}
+  .manifesto .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:start}
+  .manifesto .quote{
+    font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(26px,3vw,40px);line-height:1.25;color:var(--ink);
+    padding-left:0;border-left:1px solid var(--gold);padding-left:30px;
+  }
+  .manifesto .quote small{
+    display:block;margin-top:24px;font-style:normal;font-family:var(--sans);
+    font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);
+  }
+  .manifesto .principles{display:grid;gap:32px}
+  .principle{
+    display:grid;grid-template-columns:50px 1fr;gap:22px;padding-bottom:30px;
+    border-bottom:1px solid var(--line);
+  }
+  .principle:last-child{border-bottom:0;padding-bottom:0}
+  .principle .num{font-family:var(--serif);font-size:28px;color:var(--gold);font-style:italic}
+  .principle h4{font-family:var(--serif);font-weight:500;font-size:22px;margin:0 0 8px;letter-spacing:-.005em}
+  .principle p{margin:0;color:var(--ink-2);font-size:15px}
+  @media (max-width:880px){.manifesto .wrap{grid-template-columns:1fr;gap:48px}}
+
+  /* ============ COMPARE TABLE ============ */
+  .compare{background:var(--paper)}
+  .compare__grid{
+    display:grid;grid-template-columns:1fr 1fr;gap:0;
+    border:1px solid var(--line);margin-top:48px;
+  }
+  .compare__col{padding:38px;border-right:1px solid var(--line)}
+  .compare__col:last-child{border-right:0;background:var(--bone)}
+  .compare__col h3{
+    font-family:var(--serif);font-weight:500;font-size:28px;margin:0 0 24px;
+    letter-spacing:-.005em;
+  }
+  .compare__col ul{list-style:none;margin:0;padding:0}
+  .compare__col li{
+    padding:14px 0;border-top:1px solid var(--line);font-size:15px;color:var(--ink-2);
+    display:grid;grid-template-columns:24px 1fr;gap:12px;
+  }
+  .compare__col li:first-child{border-top:0}
+  .compare__col li::before{content:"—";color:var(--mute)}
+  .compare__col.is-edc li::before{content:"✓";color:var(--gold)}
+  @media (max-width:740px){.compare__grid{grid-template-columns:1fr} .compare__col{border-right:0;border-bottom:1px solid var(--line)} .compare__col:last-child{border-bottom:0}}
+
+  /* ============ TIERS ============ */
+  .tiers{background:var(--cream)}
+  .tiers .wrap{position:relative}
+  .tiers__head{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;margin-bottom:48px}
+  .tiers__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:24px}
+  .tier{
+    background:var(--paper);border:1px solid var(--line);
+    padding:42px 32px 36px;position:relative;display:flex;flex-direction:column;
+    transition:transform .4s ease, box-shadow .4s ease;
+  }
+  .tier:hover{transform:translateY(-4px);box-shadow:0 30px 60px -30px rgba(26,24,20,.18)}
+  .tier.is-featured{background:var(--ink);color:var(--bone);border-color:var(--ink)}
+  .tier.is-featured .tier__name,.tier.is-featured .tier__price,.tier.is-featured h3{color:var(--bone)}
+  .tier.is-featured .tier__meta,.tier.is-featured ul li{color:#cfc6b3}
+  .tier.is-featured .tier__badge{background:var(--terra);color:var(--bone)}
+  .tier__badge{
+    position:absolute;top:-12px;left:32px;background:var(--gold);color:var(--paper);
+    font-size:10px;letter-spacing:.3em;text-transform:uppercase;padding:6px 12px;
+  }
+  .tier__name{
+    font-family:var(--serif);font-weight:500;font-size:30px;letter-spacing:-.005em;margin:0 0 4px;
+  }
+  .tier__meta{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute);margin-bottom:24px}
+  .tier__price{font-family:var(--serif);font-size:42px;font-weight:400;line-height:1;margin:0 0 4px}
+  .tier__price small{font-family:var(--sans);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute);margin-left:8px}
+  .tier__pitch{font-family:var(--serif);font-style:italic;color:var(--ink-2);font-size:17px;margin:18px 0 24px}
+  .tier.is-featured .tier__pitch{color:#cfc6b3}
+  .tier ul{list-style:none;margin:0 0 28px;padding:0;flex-grow:1}
+  .tier ul li{
+    padding:11px 0;border-top:1px solid rgba(205,195,177,.5);
+    font-size:14px;color:var(--ink-2);display:grid;grid-template-columns:18px 1fr;gap:10px;line-height:1.45;
+  }
+  .tier.is-featured ul li{border-top-color:rgba(207,198,179,.18)}
+  .tier ul li:first-child{border-top:0}
+  .tier ul li::before{content:"✓";color:var(--gold);font-size:13px}
+  .tier .btn{align-self:flex-start;width:100%;text-align:center}
+  .tier.is-featured .btn{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+  .tier.is-featured .btn:hover{background:transparent;color:var(--bone)}
+  .tier__terms{font-size:11px;color:var(--mute);margin-top:18px;letter-spacing:.06em}
+  @media (max-width:980px){.tiers__grid{grid-template-columns:1fr}}
+
+  /* ============ PROCESS ============ */
+  .process{background:var(--paper)}
+  .process__grid{
+    display:grid;grid-template-columns:repeat(6,1fr);gap:18px;margin-top:48px;
+    counter-reset:step;
+  }
+  .step{
+    border-top:1px solid var(--ink);padding:22px 4px 0;position:relative;
+  }
+  .step::before{
+    counter-increment:step;content:"0" counter(step);
+    font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold);
+    display:block;margin-bottom:10px;
+  }
+  .step h4{font-family:var(--serif);font-weight:500;font-size:19px;margin:0 0 6px;letter-spacing:-.005em}
+  .step p{font-size:13.5px;color:var(--ink-2);margin:0;line-height:1.45}
+  @media (max-width:980px){.process__grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.process__grid{grid-template-columns:1fr}}
+
+  /* ============ SOURCING ============ */
+  .sourcing{background:var(--bone)}
+  .sourcing .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:80px;align-items:center}
+  .sourcing__chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+  .chip{
+    background:var(--paper);border:1px solid var(--line);padding:9px 16px;
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);
+  }
+  .sourcing__panel{
+    background:var(--paper);border:1px solid var(--line);padding:42px;
+    display:grid;grid-template-columns:1fr 1fr;gap:30px;
+  }
+  .stat{}
+  .stat .num{font-family:var(--serif);font-size:54px;font-weight:300;line-height:1;color:var(--ink)}
+  .stat .lbl{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--mute);margin-top:8px}
+  @media (max-width:880px){.sourcing .wrap{grid-template-columns:1fr;gap:48px}}
+
+  /* ============ BENCH ============ */
+  .bench{background:var(--paper)}
+  .bench__grid{
+    display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-top:48px;
+  }
+  .bench__item{background:var(--paper);padding:34px 24px;min-height:200px}
+  .bench__item:hover{background:var(--bone)}
+  .bench__item .ic{
+    width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+    color:var(--gold);font-family:var(--serif);font-size:22px;font-style:italic;
+    border:1px solid var(--gold);border-radius:50%;margin-bottom:18px;
+  }
+  .bench__item h5{font-family:var(--serif);font-weight:500;font-size:20px;margin:0 0 6px}
+  .bench__item p{margin:0;font-size:13.5px;color:var(--ink-2);line-height:1.45}
+  @media (max-width:980px){.bench__grid{grid-template-columns:repeat(2,1fr)}}
+  @media (max-width:560px){.bench__grid{grid-template-columns:1fr}}
+
+  /* ============ MAP / GLOBAL ============ */
+  .global{background:var(--ink);color:var(--bone)}
+  .global .eyebrow{color:#a59c8c}
+  .global .eyebrow::before{background:var(--terra-soft)}
+  .global h2{color:var(--bone)}
+  .global .lead{color:#cfc6b3}
+  .global__grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;margin-top:60px;align-items:start}
+  .markets{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .market{
+    padding:24px;border:1px solid rgba(243,238,229,.16);background:rgba(243,238,229,.03);
+  }
+  .market h4{font-family:var(--serif);font-weight:500;font-size:22px;margin:0 0 4px;color:var(--bone)}
+  .market .role{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:#a59c8c;margin-bottom:14px}
+  .market p{font-size:14px;color:#cfc6b3;margin:0;line-height:1.5}
+  .market .ph{font-size:11px;letter-spacing:.2em;color:#a59c8c;margin-top:14px;display:block}
+  .globe{aspect-ratio:1/1;border:1px solid rgba(243,238,229,.18);position:relative;background:radial-gradient(circle at 60% 35%, rgba(168,85,58,.12), transparent 55%)}
+  @media (max-width:980px){.global__grid{grid-template-columns:1fr;gap:48px}.markets{grid-template-columns:1fr}}
+
+  /* ============ TESTIMONIAL ============ */
+  .testimonial{background:var(--cream);text-align:center}
+  .testimonial .wrap{max-width:900px}
+  .testimonial blockquote{
+    font-family:var(--serif);font-style:italic;font-weight:300;
+    font-size:clamp(26px,3.4vw,44px);line-height:1.25;color:var(--ink);
+    margin:0;padding:0;
+  }
+  .testimonial blockquote::before{content:"\201C";font-size:80px;color:var(--gold);line-height:0;vertical-align:-22px;margin-right:10px}
+  .testimonial cite{
+    display:block;margin-top:36px;font-style:normal;font-family:var(--sans);
+    font-size:11px;letter-spacing:.34em;text-transform:uppercase;color:var(--mute);
+  }
+
+  /* ============ FAQ ============ */
+  .faq{background:var(--paper)}
+  .faq__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;margin-top:48px}
+  .faq__list{display:grid;gap:0;border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line);padding:22px 0;cursor:pointer}
+  details summary{
+    list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;
+    font-family:var(--serif);font-size:21px;font-weight:500;color:var(--ink);
+  }
+  details summary::-webkit-details-marker{display:none}
+  details summary::after{
+    content:"+";font-family:var(--serif);font-size:28px;color:var(--gold);
+    transition:transform .35s ease;font-weight:300;
+  }
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{margin:14px 0 0;color:var(--ink-2);font-size:15px;max-width:62ch}
+  @media (max-width:880px){.faq__grid{grid-template-columns:1fr;gap:32px}}
+
+  /* ============ CTA STRIP ============ */
+  .cta{
+    background:var(--ink);color:var(--bone);
+    padding:clamp(70px,9vw,120px) var(--pad);text-align:center;
+  }
+  .cta h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,4.4vw,56px);margin:0 0 18px;color:var(--bone)}
+  .cta p{color:#cfc6b3;font-family:var(--serif);font-style:italic;font-size:20px;max-width:60ch;margin:0 auto 36px}
+  .cta .btn{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+  .cta .btn:hover{background:transparent;color:var(--bone)}
+  .cta .meta{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#a59c8c;margin-top:36px}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--bone);padding:80px var(--pad) 36px;border-top:1px solid var(--line)}
+  .foot{max-width:var(--maxw);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:48px}
+  .foot h6{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--mute);margin:0 0 18px}
+  .foot a{display:block;padding:6px 0;color:var(--ink-2);font-size:14px}
+  .foot a:hover{color:var(--ink)}
+  .foot__brand p{color:var(--ink-2);font-size:14px;margin:14px 0 0;max-width:34ch}
+  .copy{max-width:var(--maxw);margin:60px auto 0;padding-top:24px;border-top:1px solid var(--line);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;
+    font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--mute)}
+  @media (max-width:880px){.foot{grid-template-columns:1fr 1fr}}
+
+  /* ============ BOOKING MODAL ============ */
+  .modal{position:fixed;inset:0;background:rgba(26,24,20,.55);display:none;align-items:center;justify-content:center;z-index:99;padding:20px}
+  .modal.open{display:flex}
+  .modal__box{background:var(--paper);max-width:560px;width:100%;border:1px solid var(--line);padding:48px;position:relative;max-height:92vh;overflow:auto}
+  .modal__close{position:absolute;top:14px;right:18px;background:transparent;border:0;font-size:28px;cursor:pointer;color:var(--ink)}
+  .modal h3{font-family:var(--serif);font-weight:500;font-size:34px;margin:0 0 8px}
+  .modal p.sub{color:var(--ink-2);font-family:var(--serif);font-style:italic;margin:0 0 24px}
+  .field{display:grid;gap:6px;margin-bottom:16px}
+  .field label{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)}
+  .field input,.field select,.field textarea{
+    border:1px solid var(--line);background:var(--paper);padding:12px 14px;
+    font-family:var(--sans);font-size:14px;color:var(--ink);border-radius:0;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--ink)}
+  .modal .btn{width:100%;margin-top:8px}
+  .ok{display:none;text-align:center;padding:30px 0}
+  .ok.show{display:block}
+  .ok h4{font-family:var(--serif);font-size:32px;margin:0 0 12px}
+
+  /* reveal */
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity .9s ease, transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* ============ PRINT (Ctrl+P → Save as PDF) ============ */
+  @page { size: A4; margin: 12mm 14mm }
+  @media print{
+    .nav, .nav__cta, .menu-toggle, .modal { display:none !important }
+    .strip { display:none !important }
+    body { background:#fff }
+    .hero { padding:30px 0 20px; grid-template-columns: 1fr; gap:20px }
+    .hero__visual { display:none }
+    section.section { padding:30px 0; page-break-inside:avoid }
+    .compare__grid, .tiers__grid, .process__grid, .bench__grid, .markets, .global__grid, .manifesto .wrap, .sourcing .wrap, .faq__grid { page-break-inside:avoid }
+    .tier { page-break-inside:avoid; break-inside:avoid }
+    details { page-break-inside:avoid }
+    details > summary::after { display:none }
+    details:not([open]) > * { display:revert }
+    details > p { display:block !important; margin-top:8px !important }
+    details[open], details { open:true }
+    .reveal { opacity:1 !important; transform:none !important }
+    .cta { background:#fff !important; color:var(--ink) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+    .cta h2, .cta p { color:var(--ink) !important }
+    .tier.is-featured { background:#fff !important; color:var(--ink) !important; border:2px solid var(--ink) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+    .tier.is-featured .tier__name, .tier.is-featured .tier__price, .tier.is-featured h3, .tier.is-featured .tier__pitch, .tier.is-featured ul li, .tier.is-featured .tier__meta { color:var(--ink) !important }
+    .global { background:#fff !important; color:var(--ink) !important; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+    .global h2, .global .lead { color:var(--ink) !important }
+    .market { background:#fff !important; border-color:var(--line) !important }
+    .market h4 { color:var(--ink) !important }
+    .market p, .market .role, .market .ph { color:var(--ink-2) !important }
+    .globe { display:none }
+    .btn, .btn--ghost { display:none !important }
+    .tier__badge { background:#000 !important; color:#fff !important; -webkit-print-color-adjust:exact; print-color-adjust:exact }
+    a[href]::after { content:"" }
+    h1, h2.section__title { page-break-after:avoid }
+    footer { background:#fff !important; padding-top:20px }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a href="#top" class="brand">
+      EDC
+      <small>Emerging Designer Collective</small>
+    </a>
+    <nav class="nav__links" id="navlinks">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#tiers">Tiers</a>
+      <a href="#process">Process</a>
+      <a href="#sourcing">Sourcing</a>
+      <a href="#global">Global</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav__cta">
+      <select class="ccy" id="ccy" aria-label="Currency">
+        <option value="USD">USD</option>
+        <option value="AUD">AUD</option>
+        <option value="SGD">SGD</option>
+        <option value="AED">AED</option>
+        <option value="GBP">GBP</option>
+      </select>
+      <a href="#book" class="btn" onclick="openModal(event)">Book Consultation</a>
+      <button class="menu-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">≡</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div>
+    <div class="hero__kicker">Bali · Singapore · Brisbane — serving Australia · Singapore · Dubai · United Kingdom</div>
+    <h1>Hire your own <em>fashion design &amp; production</em> team.</h1>
+    <p class="lede">Most fashion brands stitch together freelancers, factories, and chance. With the EDC Retainer you keep a full ethical studio on hand — design, sample room, sourcing, atelier — the same hands holding the craft, every cycle.</p>
+    <div class="hero__actions">
+      <a href="#book" class="btn" onclick="openModal(event)">Get Indicative Costing</a>
+      <a href="#tiers" class="btn btn--ghost">View Three Tiers</a>
+    </div>
+    <div class="hero__meta">
+      <div>MOQ from 30</div>
+      <div>~12 weeks to first collection</div>
+      <div>3-month minimum</div>
+    </div>
+  </div>
+  <div class="hero__visual" aria-hidden="true">
+    <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0" stop-color="#1a1814" stop-opacity=".10"/>
+          <stop offset="1" stop-color="#1a1814" stop-opacity=".02"/>
+        </linearGradient>
+      </defs>
+      <!-- subtle fabric drape -->
+      <path d="M0,120 C100,80 200,160 400,90 L400,500 L0,500 Z" fill="url(#g1)"/>
+      <path d="M0,220 C140,180 240,260 400,210 L400,500 L0,500 Z" fill="#1a1814" opacity=".06"/>
+      <path d="M0,330 C140,300 260,360 400,330 L400,500 L0,500 Z" fill="#1a1814" opacity=".09"/>
+      <!-- thread lines -->
+      <g stroke="#1a1814" stroke-opacity=".22" stroke-width=".5" fill="none">
+        <path d="M40,40 C160,160 240,80 360,200"/>
+        <path d="M60,80 C180,200 260,120 380,240"/>
+        <path d="M20,160 C140,280 220,200 340,320"/>
+      </g>
+      <!-- mark -->
+      <g transform="translate(40,40)" fill="#1a1814" opacity=".9">
+        <text font-family="Cormorant Garamond, serif" font-size="22" font-style="italic" letter-spacing="2">no.</text>
+        <text x="48" font-family="Cormorant Garamond, serif" font-size="22" font-weight="500">01 · cycle</text>
+      </g>
+    </svg>
+    <div class="tag">Considered, not commissioned. Crafted, not manufactured.</div>
+  </div>
+</section>
+
+<!-- LOCATION STRIP -->
+<div class="strip" aria-hidden="true">
+  <div class="strip__track">
+    <span>Bali Atelier</span><span>Singapore Studio</span><span>Brisbane Liaison</span>
+    <span>Sydney · Melbourne</span><span>Dubai · DIFC</span><span>London · Shoreditch</span>
+    <span>OEKO-TEX® Certified</span><span>Lenzing™ Partner</span><span>ECONYL® Sourcing</span>
+    <span>Bali Atelier</span><span>Singapore Studio</span><span>Brisbane Liaison</span>
+    <span>Sydney · Melbourne</span><span>Dubai · DIFC</span><span>London · Shoreditch</span>
+    <span>OEKO-TEX® Certified</span><span>Lenzing™ Partner</span><span>ECONYL® Sourcing</span>
+  </div>
+</div>
+
+<!-- MANIFESTO -->
+<section class="section manifesto" id="manifesto">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Our Position</div>
+      <div class="quote">
+        We empower emerging designers with personalised support, expert guidance and the slow, sustainable infrastructure of a true ethical studio — turning ideas into production-ready collections without the freelancer scramble.
+        <small>— The EDC Mission</small>
+      </div>
+    </div>
+    <div class="principles">
+      <div class="principle"><div class="num">i.</div><div><h4>One team, always.</h4><p>The same designers, pattern-makers and sample room hold your brand from brief to bulk — context that compounds every cycle.</p></div></div>
+      <div class="principle"><div class="num">ii.</div><div><h4>Low MOQ, on purpose.</h4><p>Production from 30 units per style, per colour. Test, refine, scale — without buying inventory you can't move.</p></div></div>
+      <div class="principle"><div class="num">iii.</div><div><h4>Certified by source.</h4><p>Fabric and trim sourced from mills with Lenzing™, OEKO-TEX®, ECONYL®, Tencel™ and REPREVE® credentials. Traceable, by design.</p></div></div>
+      <div class="principle"><div class="num">iv.</div><div><h4>Predictable, ethical economics.</h4><p>One retainer instead of a moving constellation of quotes. Atelier capacity reserved for you, every cycle.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section class="section compare" id="compare">
+  <div class="wrap">
+    <div class="eyebrow">The Old Way · The EDC Way</div>
+    <h2 class="section__title">Stop <em>sourcing every season.</em> Start <em>shipping every cycle.</em></h2>
+    <p class="lead">The conventional path is a renegotiation every collection. EDC removes the friction so design energy goes into the garment, not the gauntlet.</p>
+    <div class="compare__grid">
+      <div class="compare__col">
+        <h3>The Conventional Way</h3>
+        <ul>
+          <li>3 – 6 months sourcing, every collection</li>
+          <li>Re-explain your brand every season</li>
+          <li>Wait behind brands ten times your size</li>
+          <li>Quotes that change between sample and bulk</li>
+          <li>Production minimums you can't sell through</li>
+          <li>Quality control by chance, not by craft</li>
+        </ul>
+      </div>
+      <div class="compare__col is-edc">
+        <h3>The EDC Retainer</h3>
+        <ul>
+          <li>One team that already knows your brand</li>
+          <li>Priority production slot, every cycle</li>
+          <li>Low MOQ — from 30 units per style</li>
+          <li>One predictable monthly investment</li>
+          <li>Certified, traceable sourcing built-in</li>
+          <li>Pre-shipment inspection on every order</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIERS -->
+<section class="section tiers" id="tiers">
+  <div class="wrap">
+    <div class="tiers__head">
+      <div>
+        <div class="eyebrow">Three ways to work with us</div>
+        <h2 class="section__title">Foundation. <em>Studio.</em> Maison.</h2>
+        <p class="lead">One ethical studio. Three levels of access. The team is the same — the depth is what changes. Move up when you're ready.</p>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <span style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--mute)">Show in</span>
+        <select class="ccy" id="ccy2" aria-label="Currency">
+          <option value="USD">USD</option>
+          <option value="AUD">AUD</option>
+          <option value="SGD">SGD</option>
+          <option value="AED">AED</option>
+          <option value="GBP">GBP</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="tiers__grid">
+
+      <article class="tier">
+        <h3 class="tier__name">Foundation</h3>
+        <div class="tier__meta">Your Foundation Team</div>
+        <div class="tier__price"><span data-usd="840">$840</span><small>per month</small></div>
+        <p class="tier__pitch">For the brand finding its voice. Everything you need to design, sample and produce a tight first range.</p>
+        <ul>
+          <li>Brand consultation &amp; design brief</li>
+          <li>4 pieces per cycle · MOQ from 30 / style / colour</li>
+          <li>Full design package — mood, flats, renders</li>
+          <li>Size chart development &amp; sample-size grading</li>
+          <li>Fabric &amp; trim sourcing from certified mills</li>
+          <li>Pattern drafting &amp; commercial techpack</li>
+          <li>2 rounds of revisions per stage</li>
+          <li>1 toile + 1 true sample per style</li>
+          <li>Video fit sessions (toile and true sample)</li>
+          <li>Production quote, atelier slot, pre-shipment QC</li>
+          <li>5 × 30-min creative bench consults</li>
+          <li>1 Bali studio visit per cycle · Email + portal</li>
+        </ul>
+        <a href="#" class="btn" data-stripe="foundation" onclick="openStripe(event,'foundation')">Subscribe — Foundation</a>
+        <a href="#book" class="btn btn--ghost" style="margin-top:8px;text-align:center" onclick="openModal(event,'Foundation')">Talk first — Book Call</a>
+        <div class="tier__terms">3-month minimum · 1 month notice · Secure card payment via Stripe</div>
+      </article>
+
+      <article class="tier is-featured">
+        <span class="tier__badge">Most Popular</span>
+        <h3 class="tier__name">Studio</h3>
+        <div class="tier__meta">Your Full Team</div>
+        <div class="tier__price"><span data-usd="1400">$1,400</span><small>per month</small></div>
+        <p class="tier__pitch">For the brand in motion. Deeper sampling, sharper grading, and a designer in your pocket on WhatsApp.</p>
+        <ul>
+          <li>Everything in Foundation, plus —</li>
+          <li>5 pieces per cycle</li>
+          <li>3 rounds of revisions per stage</li>
+          <li>Up to 2 toiles + 2 true samples per style</li>
+          <li>SML grading included · Pattern grading rules documented</li>
+          <li>5 swatches + 5 strike-offs included</li>
+          <li>Custom artwork development (1 per cycle)</li>
+          <li>2 hrs/month creative bench (any specialist)</li>
+          <li>Quarterly 45-min bench check-in</li>
+          <li>Behind-the-scenes video updates</li>
+          <li>WhatsApp access to your design lead</li>
+          <li>2 Bali studio visits per cycle · Priority booking</li>
+        </ul>
+        <a href="#" class="btn" data-stripe="studio" onclick="openStripe(event,'studio')">Subscribe — Studio</a>
+        <a href="#book" class="btn btn--ghost" style="margin-top:8px;text-align:center;background:transparent;color:var(--bone);border-color:rgba(243,238,229,.4)" onclick="openModal(event,'Studio')">Talk first — Book Call</a>
+        <div class="tier__terms">3-month minimum · Switch tier any monthly cycle · Stripe billing</div>
+      </article>
+
+      <article class="tier">
+        <h3 class="tier__name">Maison</h3>
+        <div class="tier__meta">Your Master Team</div>
+        <div class="tier__price"><span data-usd="2400">$2,400</span><small>per month</small></div>
+        <p class="tier__pitch">For the brand scaling with intent. Unlimited sampling within scope, dedicated production manager, audit and impact report.</p>
+        <ul>
+          <li>Everything in Studio, plus —</li>
+          <li>6 pieces per cycle</li>
+          <li>Unlimited revisions &amp; sampling rounds*</li>
+          <li>Full grade set [XS – XL]</li>
+          <li>10 swatches + 10 strike-offs included</li>
+          <li>Unlimited custom artwork (within scope)</li>
+          <li>Bespoke care label design · Pattern library kept on file</li>
+          <li>6 hrs/month creative bench time</li>
+          <li>2 × 45-min quarterly strategy sessions</li>
+          <li>E-commerce shoot consult + final imagery</li>
+          <li>Production journey video capture</li>
+          <li>Sustainability impact report + annual third-party audit</li>
+          <li>WhatsApp + weekly 30-min calls with design lead</li>
+          <li>Unlimited studio visits · Dedicated production manager</li>
+          <li>First-look production slot every cycle · Custom-branded techpacks</li>
+        </ul>
+        <a href="#" class="btn" data-stripe="maison" onclick="openStripe(event,'maison')">Subscribe — Maison</a>
+        <a href="#book" class="btn btn--ghost" style="margin-top:8px;text-align:center" onclick="openModal(event,'Maison')">Talk first — Book Call</a>
+        <div class="tier__terms">*Unlimited inclusions sit within scope agreed at quarterly review. · Stripe billing</div>
+      </article>
+    </div>
+
+    <p style="margin:40px auto 0;text-align:center;color:var(--mute);font-size:13px;max-width:70ch">
+      All tiers — 3-month minimum · ~12 weeks to first collection (indicative) · One month's notice to cancel · No lock-in beyond minimum. Switch tiers at any monthly cycle.
+    </p>
+    <div style="margin:34px auto 0;text-align:center;display:flex;justify-content:center;gap:28px;flex-wrap:wrap;align-items:center;font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--mute)">
+      <span>Payments powered by</span>
+      <svg viewBox="0 0 60 25" width="50" height="22" aria-label="Stripe" fill="currentColor" style="color:var(--ink-2)"><path d="M59.64 14.28h-8.06c.19 1.93 1.6 2.55 3.2 2.55 1.64 0 2.96-.37 4.05-.95v3.32c-1.09.6-2.55.95-4.55.95-4 0-6.84-2.52-6.84-7.39 0-4.18 2.39-7.42 6.31-7.42 3.93 0 5.93 3.24 5.93 7.42 0 .47-.04 1.32-.04 1.52zm-5.92-5.62c-1.03 0-2.17.73-2.17 2.58h4.24c0-1.85-1.07-2.58-2.07-2.58zM40.95 20.3c-1.44 0-2.32-.6-2.92-1.04l-.02 4.63-4.12.87V5.57h3.63l.21 1.06c.57-.52 1.62-1.29 3.23-1.29 2.9 0 5.62 2.61 5.62 7.34 0 5.17-2.69 7.62-5.63 7.62zm-.96-11.36c-.95 0-1.54.34-1.97.81l.02 6.12c.4.43.98.78 1.95.78 1.52 0 2.55-1.65 2.55-3.87 0-2.15-1.04-3.84-2.55-3.84zM28.92 5.57h4.13v14.44h-4.13V5.57zM28.92.51L33.05 0v3.05l-4.13-.87V.51zm-4.23 9.92v9.58H20.6V5.57h3.45l.16 1.85c.65-1.41 1.83-2.34 3.4-2.27v3.81c-.96-.03-2.6.21-2.92 1.47zm-8.86-.65c-.85 0-1.36.25-1.36.85 0 .66.86.95 1.91 1.3 1.71.57 3.96 1.32 3.96 4.45 0 3.04-2.41 4.79-5.93 4.79-1.45 0-3.04-.29-4.62-.95v-3.95c1.4.76 3.17 1.32 4.62 1.32.9 0 1.55-.24 1.55-.96 0-.69-.94-1-2.05-1.4-1.69-.58-3.81-1.32-3.81-4.18 0-3.04 2.3-4.85 5.71-4.85 1.4 0 2.78.21 4.16.74v3.89c-1.27-.67-2.86-1.05-4.14-1.05zm-7.53 11.13c-1.93 0-3.34-.77-3.34-3.05V9.13H3.04V5.57h1.92v-2.5l4.05-.86v3.36h3.18v3.56H9.01v5.16c0 .57.32.78.97.78.59 0 1.45-.27 2.2-.71v3.59c-.83.45-1.83.78-2.88.78z"/></svg>
+      <span style="border-left:1px solid var(--line);padding-left:28px">SSL · 3D Secure · PCI compliant</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process" id="process">
+  <div class="wrap">
+    <div class="eyebrow">How the Retainer Works</div>
+    <h2 class="section__title">From <em>first brief</em> to first delivery — six considered stages.</h2>
+    <p class="lead">A 12-week rhythm, built around your collection. One month design. One month sampling. One month print, dye, and finalising. Production begins on schedule, not on chance.</p>
+    <div class="process__grid">
+      <div class="step"><h4>Brief &amp; Drive</h4><p>Onboarding call, Google Drive set-up, design brief and inspiration loaded.</p></div>
+      <div class="step"><h4>Design &amp; Techpack</h4><p>Digital flats, range plan, commercial techpacks built by your technical designer.</p></div>
+      <div class="step"><h4>Source &amp; Quote</h4><p>Certified-mill fabric, trim, label, dye and print quotes assembled — Pantone confirmed.</p></div>
+      <div class="step"><h4>Pattern &amp; Toile</h4><p>Pattern drafting, toile fit on video, refinements documented in techpack.</p></div>
+      <div class="step"><h4>True Sample</h4><p>Sample in your chosen fabric. Final fit, finish and grade rules locked.</p></div>
+      <div class="step"><h4>Production &amp; QC</h4><p>Atelier slot booked, bulk produced, pre-shipment inspection before dispatch.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCING -->
+<section class="section sourcing" id="sourcing">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Ethics, by source</div>
+      <h2 class="section__title">Material integrity — built into the brief.</h2>
+      <p class="lead">Sustainability is not a finishing claim. It is a sourcing decision made at week one. We work only with mills carrying recognised certifications, and we hold the paper trail on your behalf.</p>
+      <div class="sourcing__chips">
+        <span class="chip">Lenzing™</span>
+        <span class="chip">OEKO-TEX® Standard 100</span>
+        <span class="chip">ECONYL®</span>
+        <span class="chip">Tencel™</span>
+        <span class="chip">REPREVE®</span>
+        <span class="chip">GOTS-aligned cotton</span>
+        <span class="chip">Recycled wool blends</span>
+      </div>
+    </div>
+    <div class="sourcing__panel">
+      <div class="stat"><div class="num">30</div><div class="lbl">Unit minimum / style / colour</div></div>
+      <div class="stat"><div class="num">12</div><div class="lbl">Weeks · brief to bulk</div></div>
+      <div class="stat"><div class="num">5</div><div class="lbl">Specialists on the creative bench</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">Studios across SE-Asia &amp; Oceania</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BENCH -->
+<section class="section bench" id="bench">
+  <div class="wrap">
+    <div class="eyebrow">The Creative Bench</div>
+    <h2 class="section__title">A studio behind <em>every retainer.</em></h2>
+    <p class="lead">Every tier unlocks access to all five specialists. The difference is how much of their time you have, and how flexibly you can use it. Specific builds — sites, shoots, decks — are always quoted separately.</p>
+    <div class="bench__grid">
+      <div class="bench__item"><div class="ic">i</div><h5>Social Strategist</h5><p>Content calendar, channel mix and launch storytelling that converts.</p></div>
+      <div class="bench__item"><div class="ic">ii</div><h5>E-commerce Lead</h5><p>Funnel design, AOV/LTV planning, retention and email architecture.</p></div>
+      <div class="bench__item"><div class="ic">iii</div><h5>Editorial Photography</h5><p>Look-book and e-commerce imagery shot in our Bali studio.</p></div>
+      <div class="bench__item"><div class="ic">iv</div><h5>Web Developer</h5><p>Custom builds, performance, integrations and headless commerce.</p></div>
+      <div class="bench__item"><div class="ic">v</div><h5>Shopify Specialist</h5><p>Theme, app stack, and conversion-rate tuning for D2C operators.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOBAL -->
+<section class="section global" id="global">
+  <div class="wrap">
+    <div class="eyebrow">Global Reach</div>
+    <h2 class="section__title">Anchored in <em>Bali.</em> Working with brands worldwide.</h2>
+    <p class="lead">Our atelier and design floor sit in Bali, with operating offices in Singapore and Brisbane. We work day-to-day with founders in Australia, Singapore, the Gulf and the United Kingdom — across the timezones that build modern fashion.</p>
+    <div class="global__grid">
+      <div class="markets">
+        <div class="market">
+          <h4>Bali · Indonesia</h4>
+          <div class="role">Atelier · Sample Room · Design</div>
+          <p>The craft floor — where every retainer is delivered. Visits welcomed by appointment.</p>
+          <span class="ph">GMT +8</span>
+        </div>
+        <div class="market">
+          <h4>Singapore</h4>
+          <div class="role">Studio · Commercial HQ</div>
+          <p>Account leadership, sourcing direction and APAC client onboarding.</p>
+          <span class="ph">GMT +8</span>
+        </div>
+        <div class="market">
+          <h4>Brisbane &amp; Sydney</h4>
+          <div class="role">Australia Liaison</div>
+          <p>In-region onboarding for Australian founders, with familiar billing and contracts.</p>
+          <span class="ph">GMT +10</span>
+        </div>
+        <div class="market">
+          <h4>Dubai · DIFC</h4>
+          <div class="role">GCC Liaison</div>
+          <p>Modest-fashion and luxury micro-brands serviced via our Middle East partner desk.</p>
+          <span class="ph">GMT +4</span>
+        </div>
+        <div class="market">
+          <h4>London · United Kingdom</h4>
+          <div class="role">EMEA Liaison</div>
+          <p>Calls scheduled for UK-friendly hours; sample dispatch via Singapore hub.</p>
+          <span class="ph">GMT 0 / +1</span>
+        </div>
+        <div class="market">
+          <h4>Worldwide</h4>
+          <div class="role">Remote Delivery</div>
+          <p>Portal, WhatsApp and video — every artefact captured in your Drive. The studio comes to you.</p>
+          <span class="ph">All zones</span>
+        </div>
+      </div>
+      <div class="globe" aria-hidden="true">
+        <svg viewBox="0 0 400 400" width="100%" height="100%">
+          <defs>
+            <radialGradient id="rg" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#3a342c"/>
+              <stop offset="1" stop-color="#1a1814"/>
+            </radialGradient>
+          </defs>
+          <circle cx="200" cy="200" r="170" fill="url(#rg)" stroke="#a59c8c" stroke-opacity=".3"/>
+          <g fill="none" stroke="#cfc6b3" stroke-opacity=".22" stroke-width="1">
+            <ellipse cx="200" cy="200" rx="170" ry="60"/>
+            <ellipse cx="200" cy="200" rx="170" ry="100"/>
+            <ellipse cx="200" cy="200" rx="170" ry="140"/>
+            <line x1="30" y1="200" x2="370" y2="200"/>
+            <line x1="200" y1="30" x2="200" y2="370"/>
+          </g>
+          <!-- nodes -->
+          <g fill="#c97a5c">
+            <circle cx="245" cy="225" r="5"/><text x="252" y="228" fill="#f3eee5" font-family="Inter" font-size="10" letter-spacing="2">BALI</text>
+            <circle cx="232" cy="208" r="4"/><text x="238" y="205" fill="#f3eee5" font-family="Inter" font-size="9" letter-spacing="2">SG</text>
+            <circle cx="268" cy="260" r="4"/><text x="274" y="263" fill="#f3eee5" font-family="Inter" font-size="9" letter-spacing="2">BNE</text>
+            <circle cx="178" cy="190" r="4"/><text x="138" y="187" fill="#f3eee5" font-family="Inter" font-size="9" letter-spacing="2">DUBAI</text>
+            <circle cx="142" cy="155" r="4"/><text x="100" y="152" fill="#f3eee5" font-family="Inter" font-size="9" letter-spacing="2">LONDON</text>
+          </g>
+          <g stroke="#c97a5c" stroke-opacity=".6" fill="none" stroke-dasharray="2 3">
+            <path d="M245,225 Q200,160 142,155"/>
+            <path d="M245,225 Q210,200 178,190"/>
+            <path d="M245,225 Q260,235 268,260"/>
+            <path d="M245,225 L232,208"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="section testimonial">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;display:inline-flex">In our clients' words</div>
+    <blockquote>I wouldn't change a thing. I had the greatest experience working with EDC — they made every step of the process feel considered, and made the production journey feel possible.</blockquote>
+    <cite>Justine — Founder, Lil Foodie</cite>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq">
+  <div class="wrap">
+    <div class="faq__grid">
+      <div>
+        <div class="eyebrow">Frequently Asked</div>
+        <h2 class="section__title">The questions <em>founders ask us first.</em></h2>
+        <p class="lead">More questions in your indicative-costing call — booked in 5 days.</p>
+        <a href="#book" class="btn" style="margin-top:24px" onclick="openModal(event)">Book the Call</a>
+      </div>
+      <div class="faq__list">
+        <details><summary>How quickly can I launch?</summary><p>From signed retainer to first delivery is typically twelve weeks — one month design, one month sampling, one month print, dye and finalising. Production runs 8 – 12 weeks for standard CMT or 6 – 8 weeks via our RTL catalogue.</p></details>
+        <details><summary>What is the MOQ?</summary><p>Production from 30 units per style, per colour. Founders typically test a tight first range and grow into volume as the line proves itself.</p></details>
+        <details><summary>What is included in the monthly retainer?</summary><p>The full pre-production journey: design, sample-room, sourcing, pattern drafting, techpack, toile and true sample, plus production quote, atelier booking and pre-shipment inspection. Production costs themselves sit on a separate order docket once samples are approved.</p></details>
+        <details><summary>What sits outside the retainer?</summary><p>Bulk production costs (CMT, fabric, trims, packaging), extra sampling beyond your tier's allowance, swatches and strike-off samples beyond inclusions, custom artwork beyond scope, and freight. Everything is quoted transparently before commitment.</p></details>
+        <details><summary>How does the lock-in work?</summary><p>Three-month minimum on every tier. After the minimum, one month's written notice to cancel. No lock-in beyond the minimum. You can change tiers at any monthly cycle.</p></details>
+        <details><summary>Can I work with EDC from outside Bali?</summary><p>Yes — most founders do. Onboarding, fit sessions and reviews happen by video, all artefacts live in your Drive, and design leads are reachable on WhatsApp in Studio and Maison tiers. Studio visits are welcomed by appointment.</p></details>
+        <details><summary>Are your suppliers actually certified?</summary><p>Yes. Our sourcing network is anchored to Lenzing™, OEKO-TEX®, ECONYL®, Tencel™ and REPREVE® mills, with GOTS-aligned cotton and recycled-wool partners. Documentation is kept on file and shared with Maison clients in their annual sustainability impact report.</p></details>
+        <details><summary>What if my toile isn't what I expected?</summary><p>Designs may shift in sampling due to fabric, finish or material variation. The first revision works from fit images; the second from physical sample. Additional sampling rounds are quoted clearly — Studio and Maison tiers include more upfront.</p></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="book">
+  <h2>A thirty-minute conversation — and an honest answer.</h2>
+  <p>Tell us about your brand. Indicative costing for four designs lands inside five business days, and we tell you straight whether we're the right studio.</p>
+  <a href="#" class="btn" onclick="openModal(event)">Book Consultation</a>
+  <div class="meta">hello@emergingdesigner.fashion · +65 8952 7729</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div class="foot__brand">
+      <div class="brand" style="font-size:24px">EDC<small>Emerging Designer Collective</small></div>
+      <p>The ethical fashion studio you can hire on retainer. Bali · Singapore · Brisbane — for brands in Australia, Singapore, Dubai and the United Kingdom.</p>
+    </div>
+    <div>
+      <h6>Retainer</h6>
+      <a href="#tiers">Foundation</a>
+      <a href="#tiers">Studio</a>
+      <a href="#tiers">Maison</a>
+      <a href="#bench">Creative Bench</a>
+    </div>
+    <div>
+      <h6>Studio</h6>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#process">Process</a>
+      <a href="#sourcing">Sourcing</a>
+      <a href="#global">Locations</a>
+    </div>
+    <div>
+      <h6>Connect</h6>
+      <a href="mailto:hello@emergingdesigner.fashion">hello@emergingdesigner.fashion</a>
+      <a href="tel:+6589527729">+65 8952 7729</a>
+      <a href="https://www.emergingdesigner.fashion" target="_blank" rel="noopener">emergingdesigner.fashion</a>
+      <a href="#book" onclick="openModal(event)">Book Consultation</a>
+    </div>
+  </div>
+  <div class="copy">
+    <div>© <span id="yr"></span> Emerging Designer Collective · A studio of The Ethical Garment Co.</div>
+    <div>Considered · Crafted · On Retainer</div>
+  </div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal__box">
+    <button class="modal__close" aria-label="Close" onclick="closeModal()">×</button>
+    <div id="modalForm">
+      <h3>Book a 30-min consultation.</h3>
+      <p class="sub">Indicative costing for four designs in five business days.</p>
+      <form id="bookForm" onsubmit="return submitForm(event)">
+        <div class="field"><label>Full name</label><input required name="name" /></div>
+        <div class="field"><label>Brand</label><input required name="brand" /></div>
+        <div class="field"><label>Email</label><input required type="email" name="email" /></div>
+        <div class="field"><label>Region</label>
+          <select name="region" required>
+            <option value="">Select…</option>
+            <option>Indonesia / Bali</option>
+            <option>Australia</option>
+            <option>Singapore</option>
+            <option>UAE / Dubai</option>
+            <option>United Kingdom</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field"><label>Tier of interest</label>
+          <select name="tier" id="tierField">
+            <option>Not sure yet</option>
+            <option>Foundation</option>
+            <option>Studio</option>
+            <option>Maison</option>
+          </select>
+        </div>
+        <div class="field"><label>Tell us about your brand (optional)</label><textarea rows="3" name="notes"></textarea></div>
+        <button class="btn" type="submit">Request Indicative Costing</button>
+      </form>
+    </div>
+    <div class="ok" id="ok">
+      <h4>Thank you.</h4>
+      <p style="color:var(--ink-2)">We'll be in touch within one business day. Indicative costing follows within five.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  // ============================================================
+  // LIVE PUBLIC URL — paste your deployed URL here after using
+  // DEPLOY_NOW.html (Netlify Drop / Cloudflare Pages / GitHub Pages).
+  // Once set, a "Live Site" badge appears in the nav + footer.
+  // Example: "https://edc.pages.dev" or "https://emergingdesigner.fashion"
+  // ============================================================
+  const LIVE_URL = ""; // ← paste public URL here
+
+  // ============================================================
+  // STRIPE PAYMENT LINKS — replace these three URLs after creating
+  // your subscription Payment Links in the Stripe Dashboard.
+  // Dashboard → Payment Links → New → Subscription → AUD or USD
+  // Paste the resulting https://buy.stripe.com/... URLs below.
+  // ============================================================
+  const STRIPE_LINKS = {
+    foundation: "https://buy.stripe.com/REPLACE_FOUNDATION_LINK",
+    studio:     "https://buy.stripe.com/REPLACE_STUDIO_LINK",
+    maison:     "https://buy.stripe.com/REPLACE_MAISON_LINK"
+  };
+  function openStripe(e, tier){
+    if(e) e.preventDefault();
+    const url = STRIPE_LINKS[tier];
+    if(!url || url.includes('REPLACE_')){
+      // Fallback while links are being created — open consultation modal
+      openModal(null, tier.charAt(0).toUpperCase()+tier.slice(1));
+      return;
+    }
+    window.open(url, '_blank', 'noopener');
+  }
+
+  // Year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Live URL badge — shows when LIVE_URL is set
+  if(LIVE_URL && LIVE_URL.trim()){
+    const navCta = document.querySelector('.nav__cta');
+    if(navCta){
+      const badge = document.createElement('a');
+      badge.href = LIVE_URL;
+      badge.target = '_blank';
+      badge.rel = 'noopener';
+      badge.textContent = '● Live';
+      badge.title = 'View live site: ' + LIVE_URL;
+      badge.style.cssText = 'font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#4a8a4a;border:1px solid #4a8a4a;padding:6px 10px;border-radius:1px;text-decoration:none;font-weight:500;';
+      navCta.insertBefore(badge, navCta.firstChild);
+    }
+    // Add to footer brand
+    const footBrand = document.querySelector('.foot__brand p');
+    if(footBrand){
+      const liveLink = document.createElement('p');
+      liveLink.style.cssText = 'margin-top:18px;font-size:12px';
+      liveLink.innerHTML = 'Live: <a href="'+LIVE_URL+'" target="_blank" rel="noopener" style="color:var(--ink);border-bottom:1px solid var(--gold);padding-bottom:1px">'+LIVE_URL.replace(/^https?:\/\//,'')+'</a>';
+      footBrand.parentNode.appendChild(liveLink);
+    }
+  }
+
+  // Currency conversion (illustrative live-feel; static fallback rates)
+  const RATES = { USD:1, AUD:1.52, SGD:1.34, AED:3.67, GBP:0.79 };
+  const SYM   = { USD:"$", AUD:"A$", SGD:"S$", AED:"AED ", GBP:"£" };
+  function fmt(n, ccy){
+    const v = Math.round(n * RATES[ccy]);
+    return SYM[ccy] + v.toLocaleString();
+  }
+  function setCurrency(ccy){
+    document.querySelectorAll('[data-usd]').forEach(el=>{
+      const usd = Number(el.getAttribute('data-usd'));
+      el.textContent = fmt(usd, ccy);
+    });
+    document.querySelectorAll('.ccy').forEach(s=>s.value=ccy);
+    try{localStorage.setItem('edc_ccy', ccy)}catch(e){}
+  }
+  const saved = (function(){try{return localStorage.getItem('edc_ccy')||'USD'}catch(e){return 'USD'}})();
+  setCurrency(saved);
+  document.querySelectorAll('.ccy').forEach(s=>s.addEventListener('change',e=>setCurrency(e.target.value)));
+
+  // Reveal on scroll
+  const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+  document.querySelectorAll('section, .tier, .principle, .market, .bench__item').forEach(el=>{el.classList.add('reveal');io.observe(el)});
+
+  // Modal
+  function openModal(e, tier){
+    if(e) e.preventDefault();
+    if(tier){ document.getElementById('tierField').value = tier; }
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow='hidden';
+  }
+  function closeModal(){
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow='';
+    document.getElementById('ok').classList.remove('show');
+    document.getElementById('modalForm').style.display='block';
+  }
+  document.getElementById('modal').addEventListener('click', e=>{if(e.target.id==='modal') closeModal()});
+  document.addEventListener('keydown', e=>{if(e.key==='Escape') closeModal()});
+  function submitForm(e){
+    e.preventDefault();
+    // In production this would post to the EDC CRM (HubSpot/Pipedrive/Zoho).
+    document.getElementById('modalForm').style.display='none';
+    document.getElementById('ok').classList.add('show');
+    return false;
+  }
+</script>
+</body>
+</html>
